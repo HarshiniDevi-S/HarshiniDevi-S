@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<title>Login Here</title>
+<style>
+body {
+	
+	background-image: url('bg2.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+}
+
+#reg {
+	font-size: 16px;
+	width:80%;
+	border-radius: 10px;
+	
+}
+
+form
+{
+	background-color: transparent;
+}
+#reg:hover {
+	font-size: 16px;
+	width:80%;
+	border-radius: 10px;
+	
+}
+.btn
+{
+	font-size: 18px;
+	background-color: aqua;
+	border:2px solid white;
+}
+@media only screen and (max-width: 767px) {
+	body {
+		background-image: url('bg2.jpg');
+	}
+}
+#regi
+{
+	padding-left:250px;
+}
+
+div {
+	font-family: 'Ubuntu', sans-serif;
+	width: 70%;
+	padding-bottom: 10px;	
+}
+</style>
+</head>
+<body>
+	
+		<br>
+		<div id="demo" class="container">
+			<center>
+					<h2>Login Form</h2>
+				</center>
+			<form id="regi" id="regi" action=LoginController method="get">
+				
+				<div class="form-group">
+					<h4>
+						<span class="glyphicon glyphicon-user"></span>&nbsp</span><label>UserName
+							:</label>
+					</h4>
+					<input id="reg" type="text" class="form-control" name="uname"
+						placeholder="Enter Username" required="required">
+				</div>
+				<div class="form-group">
+					<h4>
+						<span class="glyphicon glyphicon-lock"></span>&nbsp<label>PassWord
+							:</label>
+					</h4>
+					<input id="reg" type="password" class="form-control" name="pass"
+						placeholder="Enter Password" required="required">
+				</div>
+				<button type="submit" class="btn">Login</button>
+			</form>
+		</div>
+
+	
+</body>
+</html>

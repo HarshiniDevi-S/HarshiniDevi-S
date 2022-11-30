@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<title>Register Here</title>
+<style>
+body {
+	background-image: url('bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	background-position: center center;
+}
+h4
+{
+	color:white;
+}
+@media only screen and (max-width: 767px) {
+	body {
+		background-image: url('bg.jpg');
+	}
+}
+input[type=text]{
+    width: 80%;
+    padding: 12px 20px;
+    margin:8px 0px;
+    border: 2px solid #ccc;
+  background-color:transparent;
+  border-radius: 10px;
+  outline: none;
+
+}
+input[type=password]{
+    width: 80%;
+    padding: 12px 20px;
+    margin:8px 0px;
+    border: 2px solid #ccc;
+  background-color:transparent;
+  border-radius: 10px;
+  outline: none;
+
+}
+input[type=number]{
+    width: 80%;
+    padding: 12px 20px;
+    margin:8px 0px;
+    border: 2px solid #ccc;
+  background-color:transparent;
+  border-radius: 10px;
+  outline: none;
+
+}
+input[type=email]{
+    width: 80%;
+    padding: 12px 20px;
+    margin:8px 0px;
+    border: 2px solid #ccc;
+  background-color:transparent;
+  border-radius: 10px;
+  outline: none;
+
+}
+::placeholder
+{
+	color:white;
+}
+#reg, reg:hover {
+	width: 80%;
+}
+
+#regi, regi:hover {
+	margin-left: 8%;
+	margin-right: 10%;
+	padding-left: 60px;
+}
+
+#demo {
+	width: 60%;
+}
+
+.btn {
+	border: 2px solid white;
+}
+
+form {
+	background-color: transparent;
+}
+
+</style>
+</head>
+<body>
+
+
+	<div id="demo" class="container">
+
+		<form id="regi" action=RegisterController method="get">
+			<center>
+				<h2>Registration Form</h2>
+			</center>
+			<br><br>
+			<div class="form-group">
+				<h4>
+					<span class="glyphicon glyphicon-user"></span>&nbsp<label>FirstName
+						:</label>
+				</h4>
+				<input id="reg" type="text" class="form-control" name="fname"
+					placeholder="Enter FirstName" required="required">
+			</div>
+			<div class="form-group">
+				<h4>
+					<span class="glyphicon glyphicon-user"></span>&nbsp<label>LastName
+						:</label>
+				</h4>
+				<input id="reg" type="text" class="form-control" name="lname"
+					placeholder="Enter LastName" required="required">
+			</div>
+			<div class="form-group">
+				<h4>
+					<span class="glyphicon glyphicon-user"></span>&nbsp<label>UserName
+						:</label>
+				</h4>
+				<input id="reg" type="text" class="form-control" name="un"
+					placeholder="Enter UserName" required="required">
+			</div>
+			<div class="form-group">
+				<h4>
+					<span class="glyphicon glyphicon-envelope"></span>&nbsp<label>E-mail
+						:</label>
+				</h4>
+				<input id="reg" type="text" class="form-control" name="mail"
+					placeholder="Enter E-mail" required="required">
+			</div>
+			<div class="form-group">
+				<h4>
+					<span class="glyphicon glyphicon-phone"></span>&nbsp<label>Mobile
+						No. :</label>
+				</h4>
+				<input id="reg" type="text" class="form-control" name="mobno"
+					placeholder="Enter Mobile No." required="required">
+			</div>
+			<div class="form-group">
+				<h4>
+					<span class="glyphicon glyphicon-lock"></span>&nbsp<label>PassWord
+						:</label>
+				</h4>
+				<input id="reg" type="password" class="form-control" name="pa"
+					placeholder="Enter password" required="required">
+			</div>
+			<button id="size" type="submit" class="btn btn-primary">Register</button>
+		</form>
+	</div>
+
+</body>
+</html>
